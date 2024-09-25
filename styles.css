@@ -1,0 +1,211 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel Decorative', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; /* Ensure content is visible below the header */
+    background-image: url('https://via.placeholder.com/1200x800'); /* Default background image, can be replaced dynamically */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-img {
+    width: 100%; /* Increased the size by 150% */
+    height: auto;
+    z-index: 1;
+}
+
+.hero-content {
+    color: #fff;
+    z-index: 1; /* Ensure the content stays above the image */
+    border-radius: 15px; /* Rounding corners of hero section */
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px; /* Slightly round button corners */
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #d62828;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto;
+    background: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    border: 2px solid white; /* White outline */
+    color: white; /* White text */
+    backdrop-filter: blur(5px); /* Blurs the background image behind text */
+    z-index: 2;
+    border-radius: 15px; /* Rounding corners of each section */
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white; /* White text for section headings */
+}
+
+.content-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: white; /* White text for section paragraphs */
+}
+
+/* Promo Gallery */
+.promo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.promo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounding promo gallery image corners */
+}
+
+/* Newsletter Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounding input fields */
+}
+
+form button {
+    width: 150px;
+    border-radius: 8px; /* Rounding button corners */
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    border-radius: 0 0 15px 15px; /* Rounding the bottom of the footer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
