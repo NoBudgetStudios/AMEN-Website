@@ -56,6 +56,9 @@ const pdfDownloadLink = "https://drive.google.com/uc?export=download&id=1x9B1TF0
 
 function updatePageContent() {
     ////IMAGES
+    document.querySelector('meta[property="og:image"]').setAttribute("content", promo_image);
+    document.querySelector('meta[name="twitter:image"]').setAttribute("content", promo_image);
+
     document.body.style.backgroundImage = `url(${backgroundImage})`;
     document.body.style.backgroundRepeat = "no-repeat";
 
@@ -67,9 +70,9 @@ function updatePageContent() {
     document.getElementById('promo-img-4').src = promoImage4;
     document.getElementById('promo-img-5').src = promoImage5;
     document.getElementById('promo-img-6').src = promoImage6;
-    document.getElementById('promo-img-4').src = promoImage7;
-    document.getElementById('promo-img-5').src = promoImage8;
-    document.getElementById('promo-img-6').src = promoImage9;
+    document.getElementById('promo-img-7').src = promoImage7;
+    document.getElementById('promo-img-8').src = promoImage8;
+    document.getElementById('promo-img-9').src = promoImage9;
 
     ////TEXTS
 
