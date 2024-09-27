@@ -1,39 +1,65 @@
-// Set your dynamic content here
-const productName = "AMEN"; // Change this for different products
+////TEXTS
+const productName = "AMEN";
 
-// Text content for the hero section and CTA
-const heroDescription = `Amen is a tabletop RPG created by Konstantinos Klimantakis, where players 
+const newsletter_button_text = "Join the Newsletter";
+const download_button_text = "Download the Rules";
+
+const section_1_button_text = "Introduction";
+const section_2_button_text = "About";
+const section_3_button_text = "More";
+const section_4_button_text = "Newsletter";
+
+const heading_2_1 = "Introduction"
+const section_text_1 = `Amen is a horror tabletop RPG created by Konstantinos Klimantakis, where players 
 take on roles like mediums, priests, paranormal investigators and more. 
 Their goal is to identify and banish spirits haunting various 
 locations by gathering clues and performing rituals. 
 Players must cooperate, use their characters’ unique abilities, 
-and engage in strategic storytelling to navigate supernatural encounters and complete their mission​
-`;
+and engage in strategic storytelling to navigate supernatural encounters and complete their mission​`;
 
-const heroCTA = "@Join the Newsletter";
-const downloadCTA = "@Download TTRPG Rules"; // Text for the download button
-const aboutText = "In Amen, players take on roles such as exorcists or paranormal investigators, each with unique abilities, exploring haunted locations to uncover the type of spirit present. The Game Master (GM) plays a dual role, not only guiding the narrative and creating an immersive, suspenseful atmosphere but also embodying the spirit itself, introducing threats and challenges to the players. As the team uses items like pendulums and holy symbols to gather clues, they must protect themselves from the spirit controlled by the GM. The ultimate goal is to perform a ritual by stacking six dice in the correct sequence, specific to the spirit type, while the GM ensures each encounter is tense and unpredictable."        
+const heading_2_2 = "About"
+const section_text_2 = `Enter the eerie world of AMEN, 
+where you embody characters like the Ritualist, 
+Medium, Priest, and more to confront the unknown.
+Guided by the Game Master’s haunting narration, 
+explore places like haunted manors or catacombs using items like Ouija boards, 
+EMF detectors, and Tarot cards to communicate with restless spirits.
+With the innovative dice-stacking ritual mechanic heightening the tension, 
+delve deeper into the paranormal mysteries!`
 
-// Image URLs
-const heroImage = "./images/descriptive_promo_image.png";
+const heading_2_3 = "More"
+const section_text_3 = ""
 
-const promoImage1 = "./images/promo_image.png";
-const promoImage2 = "./images/descriptive_promo_image.png";
-const promoImage3 = "./images/promo_image.png";
-const promoImage4 = "./images/promo_image.png";
-const promoImage5 = "./images/descriptive_promo_image.png";
-const promoImage6 = "./images/promo_image.png";
+const heading_2_4 = "Newsletter"
+const section_text_4 = "We’d love to keep you updated with all the latest news and exciting developments!"
 
-// PDF Download URL
+const footer_copyright = "AMEN - 2024 All rights reserved."   
+
+////Image URLS
+const backgroundImage = "./images/background_image_blurred.png";
+
+const promo_image = "./images/promo-images/promo_image.png";
+
+const promoImage1 = "./images/promo-images/descriptive_promo_image.png";
+const promoImage2 = "./images/promo-material/promo_image (1).png";
+const promoImage3 = "./images/promo-material/promo_image (2).png";
+const promoImage4 = "./images/promo-material/promo_image (3).png";
+const promoImage5 = "./images/promo-material/promo_image (4).png";
+const promoImage6 = "./images/promo-material/promo_image (5).png";
+const promoImage7 = "./images/promo-material/promo_image (6).png";
+const promoImage8 = "./images/promo-material/promo_image (7).png";
+const promoImage9 = "./images/promo-material/promo_image (8).png";
+
+//URLS
 const pdfDownloadLink = "https://drive.google.com/uc?export=download&id=1x9B1TF0NAHNZMXpAxkCOrh2xYik5Fw4M";
 
-// Background image URL (local image)
-const backgroundImage = "./images/background_image_blurred.png"; // Path to your local background image
 
-// Function to update dynamic content on the page
 function updatePageContent() {
-    // Update the hero image
-    document.getElementById('hero-image').src = heroImage;
+    ////IMAGES
+    document.body.style.backgroundImage = `url(${backgroundImage})`;
+    document.body.style.backgroundRepeat = "no-repeat";
+
+    document.getElementById('intro-image').src = promo_image;
     
     document.getElementById('promo-img-1').src = promoImage1;
     document.getElementById('promo-img-2').src = promoImage2;
@@ -41,50 +67,39 @@ function updatePageContent() {
     document.getElementById('promo-img-4').src = promoImage4;
     document.getElementById('promo-img-5').src = promoImage5;
     document.getElementById('promo-img-6').src = promoImage6;
+    document.getElementById('promo-img-4').src = promoImage7;
+    document.getElementById('promo-img-5').src = promoImage8;
+    document.getElementById('promo-img-6').src = promoImage9;
 
-    // Dynamically update the background image for the page
-    document.body.style.backgroundImage = `url(${backgroundImage})`;
+    ////TEXTS
 
-    // Update the page title
     document.getElementById('page-title').textContent = productName;
+    document.getElementById('header-title').textContent = productName;
 
-    // Update the logo in the navigation
-    document.getElementById('product-name-logo').textContent = productName;
+    //document.getElementById('heading-2-1').textContent = heading_2_1;
+    document.getElementById('section-text-1').textContent = section_text_1;
+    document.getElementById('heading-2-2').textContent = heading_2_2;
+    document.getElementById('section-text-2').textContent = section_text_2;
+    document.getElementById('heading-2-3').textContent = heading_2_3;
+    //document.getElementById('section-text-3').textContent = section_text_3;
+    document.getElementById('heading-2-4').textContent = heading_2_4;
+    document.getElementById('section-text-4').textContent = section_text_4;
 
-    // Update the main heading in the hero section
-    document.getElementById('product-name').textContent = productName;
+    document.getElementById('footer-copyright').textContent = footer_copyright;    
+    
+    ////BUTTONS
+    
+    document.getElementById('section-1-button').textContent = section_1_button_text;
+    document.getElementById('section-2-button').textContent = section_2_button_text;
+    document.getElementById('section-3-button').textContent = section_3_button_text;
+    document.getElementById('section-4-button').textContent = section_4_button_text;
 
-    // Update the hero section description and call-to-action
-    document.getElementById('hero-description').textContent = heroDescription;
-    document.getElementById('hero-cta').textContent = heroCTA;
+    document.getElementById('rules-download-button').href = pdfDownloadLink;
+    document.getElementById('rules-download-button').innerHTML = `<i class="fas fa-download"></i> ${download_button_text}`;
 
-    // Update the "About" section dynamically
-    document.getElementById('about-text').textContent = aboutText;
+    //document.getElementById('rules-download-button').href = pdfDownloadLink;
+    document.getElementById('newsletter-button').innerHTML = `<i class="fas fa-envelope"></i> ${newsletter_button_text}`;
 
-    // Update promo image URLs
-    document.getElementById('promo-img-1').src = promoImage1;
-    document.getElementById('promo-img-2').src = promoImage2;
-    document.getElementById('promo-img-3').src = promoImage3;
-    document.getElementById('promo-img-4').src = promoImage4;
-    document.getElementById('promo-img-5').src = promoImage5;
-    document.getElementById('promo-img-6').src = promoImage6;
-
-    // Update the download PDF link and CTA text
-    document.getElementById('download-btn_1').href = pdfDownloadLink;
-    document.getElementById('download-btn_1').innerHTML = `<i class="fas fa-download"></i> ${downloadCTA}`;
-    document.getElementById('download-btn_2').href = pdfDownloadLink;
-    document.getElementById('download-btn_2').innerHTML = `<i class="fas fa-download"></i> ${downloadCTA}`;
-    document.getElementById('download-btn_3').href = pdfDownloadLink;
-    document.getElementById('download-btn_3').innerHTML = `<i class="fas fa-download"></i> ${downloadCTA}`;
-
-    // Update the call-to-action button in the hero section (Newsletter)
-    document.getElementById('newsletter-btn_1').innerHTML = `<i class="fas fa-envelope"></i> ${newsletterCTA}`;
-    // Update the second newsletter button
-    document.getElementById('newsletter-btn_2').innerHTML = `<i class="fas fa-envelope"></i> ${newsletterCTA}`;
-
-    // Update the footer text dynamically
-    document.getElementById('footer-text').innerHTML = `&copy; 2024 ${productName}. All rights reserved.`;
 }
 
-// Call the function to update the content
 updatePageContent();
