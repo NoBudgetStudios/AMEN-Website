@@ -33,7 +33,7 @@ header {
     width: 100%;
     background-color: rgba(0, 0, 0, 1);
     z-index: 1000;
-    padding: 0rem 4rem;
+    padding: 1rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,6 +70,10 @@ nav a:hover {
     background-color: #555;
 }
 
+#nav-toggle {
+    display: none;
+}
+
 section {
     padding: 4rem 2rem;
     margin: 2rem auto;
@@ -90,7 +94,7 @@ footer {
 #google-form-iframe {
     width: 100%; /* Ensure it is fully responsive */
     max-width: 1000px; /* Set a maximum width to avoid it being too wide */
-    height: 1000px; /* Adjust the height as needed */
+    height: 520px; /* Adjust the height as needed */
     border: none; /* Remove the default iframe border */
     background-color: transparent; /* Match your section background style (dark, semi-transparent) */
     padding: 20px; /* Add padding around the form */
@@ -131,6 +135,9 @@ footer {
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
+    
+    justify-content: space-between;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -167,47 +174,113 @@ footer {
     border-radius: 10px;
 }
 
-/* Mobile Styles 
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 999; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.9); 
+}
+
+/* Modal Content (image) */
+.modal-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    width: 90%;
+}
+
+/* Image inside modal */
+.carousel-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Next & Previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+/* Add hover effect to buttons */
+.prev:hover, .next:hover {
+    color: #ff0000;
+}
+
+
+/* Responsive header styles for screens smaller than 768px */
 @media (max-width: 768px) {
-    nav {
-        display: block;
+    header {
+        flex-direction: column;
+        padding: 1rem 2rem;
         text-align: center;
+    }
+
+    nav {
+        display: none;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.active {
+        display: block; /* Show the navigation when toggled */
     }
 
     nav a {
         display: block;
         margin: 10px 0;
         padding: 10px 20px;
+        background-color: #444;
+        border-radius: 5px;
     }
 
-    section {
-        max-width: 90%;
-        margin: 2rem auto;
+    nav a:hover {
+        background-color: #555;
     }
 
-    header {
-        flex-direction: column;
-        text-align: center;
+    #nav-toggle {
+        display: inline-block; /* Show the toggle button */
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+        margin-left: auto; /* Push it to the right */
+        padding-right: 20px; /* Optional: Add some padding for spacing */
     }
-
-    .promo-gallery {
-        grid-template-columns: 1fr; 
-        justify-items: center; 
-    }
-
-    .promo-gallery img {
-        width: 90%;
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
-   
-    body {
-        padding: 0 1rem;
-    }
-
-    footer {
-        text-align: center;
-        padding: 1rem;
-    }
-}*/
+}
