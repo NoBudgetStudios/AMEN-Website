@@ -4,11 +4,14 @@ const productName = "AMEN";
 const newsletter_button_text = "Join the Newsletter";
 const download_button_text = "Download the Rules";
 
+const youtubeVideoUrl = "https://www.youtube.com/embed/wDd_-Wi-rPs?autoplay=1&mute=1";
+
 const section_1_button_text = "Introduction";
 const section_2_button_text = "About";
 const section_3_button_text = "More";
 const section_4_button_text = "Newsletter";
 
+const heading_1_1 = "AMEN"
 const heading_2_1 = "Introduction"
 const section_text_1 = `Amen is a horror tabletop RPG created by Konstantinos Klimantakis, where players 
 take on roles like mediums, priests, paranormal investigators and more. 
@@ -40,15 +43,15 @@ const backgroundImage = "./images/background_image_blurred.png";
 
 const promo_image = "./images/promo-images/promo_image.png";
 
-const promoImage1 = "./images/promo-images/descriptive_promo_image.png";
-const promoImage2 = "./images/promo-material/promo_image (1).png";
-const promoImage3 = "./images/promo-material/promo_image (2).png";
-const promoImage4 = "./images/promo-material/promo_image (3).png";
-const promoImage5 = "./images/promo-material/promo_image (4).png";
-const promoImage6 = "./images/promo-material/promo_image (5).png";
-const promoImage7 = "./images/promo-material/promo_image (6).png";
-const promoImage8 = "./images/promo-material/promo_image (7).png";
-const promoImage9 = "./images/promo-material/promo_image (8).png";
+const promoImage1 = "./images/promo-material/promo_image (1).png";
+const promoImage2 = "./images/promo-material/promo_image (2).png";
+const promoImage3 = "./images/promo-material/promo_image (3).png";
+const promoImage4 = "./images/promo-material/promo_image (4).png";
+const promoImage5 = "./images/promo-material/promo_image (5).png";
+const promoImage6 = "./images/promo-material/promo_image (6).png";
+const promoImage7 = "./images/promo-material/promo_image (7).png";
+const promoImage8 = "./images/promo-material/promo_image (8).png";
+const promoImage9 = "./images/promo-material/promo_image (9).png";
 
 //URLS
 const pdfDownloadLink = "https://drive.google.com/uc?export=download&id=1x9B1TF0NAHNZMXpAxkCOrh2xYik5Fw4M";
@@ -79,6 +82,8 @@ function updatePageContent() {
     document.getElementById('page-title').textContent = productName;
     document.getElementById('header-title').textContent = productName;
 
+    document.getElementById('heading-1-1').textContent = heading_1_1;
+
     //document.getElementById('heading-2-1').textContent = heading_2_1;
     document.getElementById('section-text-1').textContent = section_text_1;
     document.getElementById('heading-2-2').textContent = heading_2_2;
@@ -97,11 +102,14 @@ function updatePageContent() {
     document.getElementById('section-3-button').textContent = section_3_button_text;
     document.getElementById('section-4-button').textContent = section_4_button_text;
 
-    document.getElementById('rules-download-button').href = pdfDownloadLink;
     document.getElementById('rules-download-button').innerHTML = `<i class="fas fa-download"></i> ${download_button_text}`;
 
     //document.getElementById('rules-download-button').href = pdfDownloadLink;
     document.getElementById('newsletter-button').innerHTML = `<i class="fas fa-envelope"></i> ${newsletter_button_text}`;
+
+    ////URLS
+    document.getElementById('rules-download-button').href = pdfDownloadLink;
+    document.getElementById('youtube-video-iframe').src = youtubeVideoUrl;
 
 }
 
