@@ -39,6 +39,10 @@ const section_text_4 = "We’d love to keep you updated with all the latest news
 const footer_copyright = "AMEN - 2024 All rights reserved."   
 
 ////Image URLS
+
+const og_image = "./images/promo-images/qr_promo_image.png";
+const twiter_image = "./images/promo-images/qr_promo_image.png";
+
 const backgroundImage = "./images/background_image_blurred.png";
 
 const promo_image = "./images/promo-images/promo_image.png";
