@@ -4,7 +4,7 @@ const productName = "AMEN";
 const newsletter_button_text = "Join the Newsletter";
 const download_button_text = "Download the Rules";
 
-const youtubeVideoUrl = "https://www.youtube.com/embed/wDd_-Wi-rPs?autoplay=1&mute=1";
+//const youtubeVideoUrl = "https://www.youtube.com/embed/wDd_-Wi-rPs?autoplay=1&mute=1";
 
 const section_1_button_text = "Introduction";
 const section_2_button_text = "About";
@@ -36,7 +36,7 @@ const section_text_3 = ""
 const heading_2_4 = "Newsletter"
 const section_text_4 = "We’d love to keep you updated with all the latest news and exciting developments!"
 
-const footer_copyright = "AMEN - 2024 All rights reserved. v2024.10.01.4"   
+const footer_copyright = "AMEN - 2024 All rights reserved. v2024.10.01.5"   
 
 ////Image URLS
 
@@ -116,7 +116,7 @@ function updatePageContent() {
 
     ////URLS
     document.getElementById('rules-download-button').href = pdfDownloadLink;
-    document.getElementById('youtube-video-iframe').src = youtubeVideoUrl;
+    //document.getElementById('youtube-video-iframe').src = youtubeVideoUrl;
 
 }
 
