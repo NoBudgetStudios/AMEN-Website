@@ -18,11 +18,11 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(./images/background_image_blurred.png); /* Adjust this to the correct path */
+    /*background-image: url(https://via.placeholder.com/1200x1200); Adjust this to the correct path */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; /* Ensures the image covers the screen */
+    background-size: cover;
     z-index: -1;
 }
 
