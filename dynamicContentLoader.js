@@ -40,8 +40,8 @@ const footer_copyright = "AMEN - 2024 All rights reserved."
 
 ////Image URLS
 
-const og_image = "./images/promo-images/qr_promo_image.png";
-const twiter_image = "./images/promo-images/qr_promo_image.png";
+const og_image = "./images/promo-material/qr_promo_image.png";
+const twiter_image = "./images/promo-material/qr_promo_image.png";
 
 const backgroundImage = "./images/background_image_blurred.png";
 
@@ -50,7 +50,7 @@ const promo_image = "./images/promo-images/promo_image.png";
 const promoImage1 = "./images/promo-material/promo_image (1).png";
 const promoImage2 = "./images/promo-material/promo_image (2).png";
 const promoImage3 = "./images/promo-material/promo_image (3).png";
-const promoImage4 = "./images/promo-material/promo_image (4).png";
+const promoImage4 = "./images/promo-material/qr_promo_image.png";
 const promoImage5 = "./images/promo-material/promo_image (5).png";
 const promoImage6 = "./images/promo-material/promo_image (6).png";
 const promoImage7 = "./images/promo-material/promo_image (7).png";
