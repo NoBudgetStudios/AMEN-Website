@@ -36,12 +36,12 @@ const section_text_3 = ""
 const heading_2_4 = "Newsletter"
 const section_text_4 = "We’d love to keep you updated with all the latest news and exciting developments!"
 
-const footer_copyright = "AMEN - 2024 All rights reserved. v2024.10.01.3"   
+const footer_copyright = "AMEN - 2024 All rights reserved. v2024.10.01.4"   
 
 ////Image URLS
 
-const og_image = "./images/promo-material/qr_promo_image.png";
-const twitter_image = "./images/promo-material/qr_promo_image.png";
+//const og_image = "./images/promo-material/qr_promo_image.png";
+//const twitter_image = "./images/promo-material/qr_promo_image.png";
 
 const backgroundImage = "./images/background_image_blurred.png";
 
@@ -63,8 +63,8 @@ const pdfDownloadLink = "https://drive.google.com/uc?export=download&id=1x9B1TF0
 
 function updatePageContent() {
     ////IMAGES
-    document.querySelector('meta[property="og:image"]').setAttribute("content", og_image);
-    document.querySelector('meta[name="twitter:image"]').setAttribute("content", twitter_image);
+    //document.querySelector('meta[property="og:image"]').setAttribute("content", og_image);
+    //document.querySelector('meta[name="twitter:image"]').setAttribute("content", twitter_image);
 
     document.body.style.backgroundImage = `url(${backgroundImage})`;
     document.body.style.backgroundAttachment = "fixed";
