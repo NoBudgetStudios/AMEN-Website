@@ -36,7 +36,7 @@ const section_text_3 = ""
 const heading_2_4 = "Newsletter"
 const section_text_4 = "We’d love to keep you updated with all the latest news and exciting developments!"
 
-const footer_copyright = "AMEN - 2024 All rights reserved. v2024.10.01.6"   
+const footer_copyright = "AMEN - 2024 All rights reserved. v2024.10.01.7"   
 
 ////Image URLS
 
