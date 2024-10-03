@@ -10,14 +10,13 @@
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 
-// Configure the tag
+// Configure the tag with debug mode enabled
 gtag('js', new Date());
-gtag('config', 'G-SYVPP6RPJC');
-
+gtag('config', 'G-SYVPP6RPJC', { 'debug_mode': true }); // Debug mode enabled
 
 ////button tracking
 
-// Add event listener for the button click event
+// Add event listener for the 'Join Newsletter' button
 document.getElementById('newsletter-button').addEventListener('click', function() {
   gtag('event', 'join_newsletter', {
     'event_category': 'Button',
@@ -25,7 +24,7 @@ document.getElementById('newsletter-button').addEventListener('click', function(
   });
 });
 
-// Add event listener for the button click event
+// Add event listener for the 'Download Rulebook' button
 document.getElementById('rules-download-button').addEventListener('click', function() {
   gtag('event', 'download_rulebook', {
     'event_category': 'Button',
