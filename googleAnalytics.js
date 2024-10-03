@@ -19,7 +19,7 @@ gtag('config', 'G-SYVPP6RPJC');
 
 // Add event listener for the button click event
 document.getElementById('newsletter-button').addEventListener('click', function() {
-  gtag('event', 'click', {
+  gtag('event', 'join_newsletter', {
     'event_category': 'Button',
     'event_label': 'Join Newsletter'
   });
@@ -27,7 +27,7 @@ document.getElementById('newsletter-button').addEventListener('click', function(
 
 // Add event listener for the button click event
 document.getElementById('rules-download-button').addEventListener('click', function() {
-  gtag('event', 'click', {
+  gtag('event', 'download_rulebook', {
     'event_category': 'Button',
     'event_label': 'Download Rulebook'
   });
