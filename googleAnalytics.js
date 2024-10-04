@@ -16,18 +16,28 @@ gtag('config', 'G-SYVPP6RPJC', { 'debug_mode': true }); // Debug mode enabled
 
 ////button tracking
 
-// Add event listener for the 'Join Newsletter' button
-document.getElementById('newsletter-button').addEventListener('click', function() {
-  gtag('event', 'join_newsletter', {
-    'event_category': 'Button',
-    'event_label': 'Join Newsletter'
-  });
-});
+document.addEventListener('DOMContentLoaded', function() {
+  // Add event listener for the 'Join Newsletter' button
+  var newsletterButton = document.getElementById('newsletter-button');
+  if (newsletterButton) {
+    newsletterButton.addEventListener('click', function() {
+      console.log('Join Newsletter button clicked');  // Log to console
+      gtag('event', 'join_newsletter', {
+        'event_category': 'Button',
+        'event_label': 'Join Newsletter'
+      });
+    });
+  }
 
-// Add event listener for the 'Download Rulebook' button
-document.getElementById('rules-download-button').addEventListener('click', function() {
-  gtag('event', 'download_rulebook', {
-    'event_category': 'Button',
-    'event_label': 'Download Rulebook'
-  });
+  // Add event listener for the 'Download Rulebook' button
+  var downloadButton = document.getElementById('rules-download-button');
+  if (downloadButton) {
+    downloadButton.addEventListener('click', function() {
+      console.log('Download Rulebook button clicked');  // Log to console
+      gtag('event', 'download_rulebook', {
+        'event_category': 'Button',
+        'event_label': 'Download Rulebook'
+      });
+    });
+  }
 });
