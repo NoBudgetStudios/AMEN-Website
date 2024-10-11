@@ -58,7 +58,7 @@ const promoImage8 = "./images/promo-material/promo_image (8).png";
 const promoImage9 = "./images/promo-material/promo_image (9).png";
 
 //URLS
-const pdfDownloadLink = "https://drive.google.com/uc?export=download&id=1x9B1TF0NAHNZMXpAxkCOrh2xYik5Fw4M";
+const pdfDownloadLink = "https://drive.google.com/uc?export=download&id=1dhmHbJStorqk6x1nDJwfsVKsU0J7ds8e";
 
 
 function updatePageContent() {
