@@ -36,7 +36,7 @@ const section_text_3 = ""
 const heading_2_4 = "Newsletter"
 const section_text_4 = "We’d love to keep you updated with all the latest news and exciting developments!"
 
-const footer_copyright = "AMEN - 2024 All rights reserved. v2024.10.31.1"   
+const footer_copyright = "AMEN - 2024 All rights reserved. v2024.10.31.2"   
 
 ////Image URLS
 
@@ -58,7 +58,7 @@ const promoImage8 = "./images/promo-material/promo_image (8).png";
 const promoImage9 = "./images/promo-material/promo_image (9).png";
 
 //URLS
-const pdfDownloadLink = "https://drive.google.com/uc?export=download&id=1rQIj1N-6pE8a6noCsrB43NGOUmr3DG1f";
+const pdfDownloadLink = "https://drive.google.com/uc?export=download&id=1Cds_M21xMTD5AIUeogazMVGbxfBvywOF";
 
 
 function updatePageContent() {
